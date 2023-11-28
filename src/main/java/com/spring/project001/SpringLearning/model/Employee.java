@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Table (name = "table_employee")
+@Table(name = "table_employee")
 public class Employee
 {
     @Id
@@ -26,29 +26,14 @@ public class Employee
         return id;
     }
 
-    public String getName()
-    {
-        return name;
-    }
-
-    public char getSex()
-    {
-        return sex;
-    }
-
-    public String getDepartment()
-    {
-        return department;
-    }
-
-    public Date getDate_of_birth()
-    {
-        return date_of_birth;
-    }
-
     public void setId(int id)
     {
         this.id = id;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 
     public void setName(String name)
@@ -56,14 +41,29 @@ public class Employee
         this.name = name;
     }
 
+    public char getSex()
+    {
+        return sex;
+    }
+
     public void setSex(char sex)
     {
         this.sex = sex;
     }
 
+    public String getDepartment()
+    {
+        return department;
+    }
+
     public void setDepartment(String department)
     {
         this.department = department;
+    }
+
+    public Date getDate_of_birth()
+    {
+        return date_of_birth;
     }
 
     public void setDate_of_birth(Date date_of_birth)
